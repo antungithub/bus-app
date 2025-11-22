@@ -22,78 +22,93 @@
       gap: 1rem;
     }
     .route-btn {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 16px;
       padding: 1rem 1.2rem;
       font-size: 1rem;
-      border-radius: 0.8rem;
-      border: none;
-      background: #1e88e5;
-      color: white;
-      font-weight: 600;
       text-align: left;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      background: #007bff;
+      color: #ffffff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
       cursor: pointer;
+      transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease;
     }
     .route-btn span {
       display: block;
-      font-size: 0.85rem;
-      opacity: 0.9;
-      font-weight: 400;
       margin-top: 0.3rem;
+      font-size: 0.88rem;
+      opacity: 0.9;
     }
     .route-btn:active {
-      transform: scale(0.98);
+      transform: scale(0.97);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      background: #005fcc;
+    }
+    .section-title {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-
   <h1>Meine Strecken</h1>
 
   <div class="routes">
 
-    <!-- 1. Kusterdingen (Mozartstraße) → Tübingen Hbf (Buslinie 7611) -->
+    <!-- 1️⃣ Kusterdingen (Mozartstraße) → Tübingen Hbf – direkt NALDO / Linie 7611 -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&origin=Haltestelle+Mozartstraße+Kusterdingen+Deutschland&destination=Haltestelle+Tübingen+Hauptbahnhof+Tübingen+Deutschland&travelmode=transit&transit_mode=bus'">
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08416%253A11000%26origin%3Dde%253A08416%253A804&amp;lng=de&amp;trip=multiModalitySelected%3Dpt'">
       Kusterdingen (Mozartstraße) → Tübingen Hbf
-      <span>Buslinie 7611 (nur Bus, soweit möglich)</span>
+      <span>Direkt in Naldo · Buslinie 7611 (nur Bus, soweit möglich)</span>
     </button>
 
-    <!-- 2. Tübingen Hbf → Kusterdingen (Mozartstraße) (Buslinie 7611) -->
+    <!-- 2️⃣ Tübingen Hbf → Kusterdingen (Mozartstraße) – direkt NALDO / Linie 7611 -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&origin=Haltestelle+Tübingen+Hauptbahnhof+Tübingen+Deutschland&destination=Haltestelle+Mozartstraße+Kusterdingen+Deutschland&travelmode=transit&transit_mode=bus'">
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08416%253A804%26origin%3Dde%253A08416%253A11000&amp;lng=de&amp;trip=multiModalitySelected%3Dpt'">
       Tübingen Hbf → Kusterdingen (Mozartstraße)
-      <span>Buslinie 7611 (nur Bus, soweit möglich)</span>
+      <span>Direkt in Naldo · Buslinie 7611 (nur Bus, soweit möglich)</span>
     </button>
 
-    <!-- 3. Tübingen Hbf → Reutlingen Hbf (Zug/ÖPNV) -->
+    <!-- Ab hier kannst du nach und nach weitere Strecken anpassen -->
+
+    <div class="section-title">Tübingen ↔ Reutlingen (Zug / ÖPNV)</div>
+
+    <!-- 3️⃣ Tübingen Hbf → Reutlingen Hbf (bis du mir die Naldo-URL gibst, noch Google Maps) -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&origin=Tübingen+Hauptbahnhof+Tübingen+Deutschland&destination=Reutlingen+Hauptbahnhof+Reutlingen+Deutschland&travelmode=transit'">
+      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=T%C3%BCbingen+Hauptbahnhof&amp;destination=Reutlingen+Hauptbahnhof&amp;travelmode=transit'">
       Tübingen Hbf → Reutlingen Hbf
-      <span>Zug- / ÖPNV-Verbindung</span>
+      <span>Zug- / ÖPNV-Verbindung (Google Maps)</span>
     </button>
 
-    <!-- 4. Reutlingen Hbf → Tübingen Hbf (Zug/ÖPNV) -->
+    <!-- 4️⃣ Reutlingen Hbf → Tübingen Hbf -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&origin=Reutlingen+Hauptbahnhof+Reutlingen+Deutschland&destination=Tübingen+Hauptbahnhof+Tübingen+Deutschland&travelmode=transit'">
+      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=Reutlingen+Hauptbahnhof&amp;destination=T%C3%BCbingen+Hauptbahnhof&amp;travelmode=transit'">
       Reutlingen Hbf → Tübingen Hbf
-      <span>Zug- / ÖPNV-Verbindung</span>
+      <span>Zug- / ÖPNV-Verbindung (Google Maps)</span>
     </button>
 
-    <!-- 5. Reutlingen Listplatz → Hermann-Ehlers-Str. (Bus) -->
+    <div class="section-title">Reutlingen Stadt</div>
+
+    <!-- 5️⃣ Reutlingen Listplatz → Hermann-Ehlers-Str. -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&origin=Haltestelle+Reutlingen+Listplatz+Reutlingen+Deutschland&destination=Haltestelle+Reutlingen+Hermann-Ehlers-Straße+Reutlingen+Deutschland&travelmode=transit&transit_mode=bus'">
+      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=Reutlingen+Listplatz&amp;destination=Reutlingen+Hermann-Ehlers-Stra%C3%9Fe&amp;travelmode=transit&amp;transit_mode=bus'">
       Reutlingen Listplatz → Hermann-Ehlers-Str.
-      <span>Busverbindung (nur Bus, soweit möglich)</span>
+      <span>Busverbindung (Google Maps, wenn verfügbar)</span>
     </button>
 
-    <!-- 6. Hermann-Ehlers-Str. → Reutlingen Listplatz (Bus) -->
+    <!-- 6️⃣ Hermann-Ehlers-Str. → Reutlingen Listplatz -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&origin=Haltestelle+Reutlingen+Hermann-Ehlers-Straße+Reutlingen+Deutschland&destination=Haltestelle+Reutlingen+Listplatz+Reutlingen+Deutschland&travelmode=transit&transit_mode=bus'">
+      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=Reutlingen+Hermann-Ehlers-Stra%C3%9Fe&amp;destination=Reutlingen+Listplatz&amp;travelmode=transit&amp;transit_mode=bus'">
       Hermann-Ehlers-Str. → Reutlingen Listplatz
-      <span>Busverbindung (nur Bus, soweit möglich)</span>
+      <span>Busverbindung (Google Maps, wenn verfügbar)</span>
     </button>
 
   </div>
-
 </body>
 </html>
