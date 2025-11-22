@@ -61,52 +61,50 @@
 
   <div class="routes">
 
-    <!-- 1️⃣ Kusterdingen (Mozartstraße) → Tübingen Hbf – direkt NALDO / Linie 7611 -->
+    <!-- 1️⃣ Kusterdingen → Tübingen -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08416%253A11000%26origin%3Dde%253A08416%253A804&amp;lng=de&amp;trip=multiModalitySelected%3Dpt'">
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08416%253A11000%26origin%3Dde%253A08416%253A804&lng=de&trip=multiModalitySelected%3Dpt'">
       Kusterdingen (Mozartstraße) → Tübingen Hbf
-      <span>Direkt in Naldo · Buslinie 7611 (nur Bus, soweit möglich)</span>
+      <span>Direkt in Naldo · Linie 7611</span>
     </button>
 
-    <!-- 2️⃣ Tübingen Hbf → Kusterdingen (Mozartstraße) – direkt NALDO / Linie 7611 -->
+    <!-- 2️⃣ Tübingen → Kusterdingen -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08416%253A804%26origin%3Dde%253A08416%253A11000&amp;lng=de&amp;trip=multiModalitySelected%3Dpt'">
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08416%253A804%26origin%3Dde%253A08416%253A11000&lng=de&trip=multiModalitySelected%3Dpt'">
       Tübingen Hbf → Kusterdingen (Mozartstraße)
-      <span>Direkt in Naldo · Buslinie 7611 (nur Bus, soweit möglich)</span>
+      <span>Direkt in Naldo · Linie 7611</span>
     </button>
 
-    <!-- Ab hier kannst du nach und nach weitere Strecken anpassen -->
+    <div class="section-title">Tübingen ↔ Reutlingen (Zug)</div>
 
-    <div class="section-title">Tübingen ↔ Reutlingen (Zug / ÖPNV)</div>
-
-    <!-- 3️⃣ Tübingen Hbf → Reutlingen Hbf (bis du mir die Naldo-URL gibst, noch Google Maps) -->
+    <!-- 3️⃣ Tübingen → Reutlingen -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=T%C3%BCbingen+Hauptbahnhof&amp;destination=Reutlingen+Hauptbahnhof&amp;travelmode=transit'">
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08415%253A22006%26origin%3Dde%253A08416%253A11000&lng=de&trip=multiModalitySelected%3Dpt'">
       Tübingen Hbf → Reutlingen Hbf
-      <span>Zug- / ÖPNV-Verbindung (Google Maps)</span>
+      <span>Direkt in Naldo · Zug RB63 / RE</span>
     </button>
 
-    <!-- 4️⃣ Reutlingen Hbf → Tübingen Hbf -->
+    <!-- 4️⃣ Reutlingen → Tübingen -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=Reutlingen+Hauptbahnhof&amp;destination=T%C3%BCbingen+Hauptbahnhof&amp;travelmode=transit'">
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08416%253A11000%26origin%3Dde%253A08415%253A22006&lng=de&trip=multiModalitySelected%3Dpt'">
       Reutlingen Hbf → Tübingen Hbf
-      <span>Zug- / ÖPNV-Verbindung (Google Maps)</span>
+      <span>Direkt in Naldo · Zug RB63 / RE</span>
     </button>
 
-    <div class="section-title">Reutlingen Stadt</div>
+    <div class="section-title">Reutlingen Innenstadt</div>
 
-    <!-- 5️⃣ Reutlingen Listplatz → Hermann-Ehlers-Str. -->
+    <!-- 5️⃣ Reutlingen Hbf → Hermann-Ehlers -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=Reutlingen+Listplatz&amp;destination=Reutlingen+Hermann-Ehlers-Stra%C3%9Fe&amp;travelmode=transit&amp;transit_mode=bus'">
-      Reutlingen Listplatz → Hermann-Ehlers-Str.
-      <span>Busverbindung (Google Maps, wenn verfügbar)</span>
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08415%253A29128%26origin%3Dde%253A08415%253A22006&lng=de&trip=multiModalitySelected%3Dpt'">
+      Reutlingen Hbf → Hermann-Ehlers-Str.
+      <span>Direkt in Naldo · Stadtbus</span>
     </button>
 
-    <!-- 6️⃣ Hermann-Ehlers-Str. → Reutlingen Listplatz -->
+    <!-- 6️⃣ Hermann-Ehlers → Reutlingen Hbf -->
     <button class="route-btn"
-      onclick="window.location.href='https://www.google.com/maps/dir/?api=1&amp;origin=Reutlingen+Hermann-Ehlers-Stra%C3%9Fe&amp;destination=Reutlingen+Listplatz&amp;travelmode=transit&amp;transit_mode=bus'">
-      Hermann-Ehlers-Str. → Reutlingen Listplatz
-      <span>Busverbindung (Google Maps, wenn verfügbar)</span>
+      onclick="window.location.href='https://www.naldo.de/fahrplan/app/trip?formik=destination%3Dde%253A08415%253A22006%26origin%3Dde%253A08415%253A29128&lng=de&trip=multiModalitySelected%3Dpt'">
+      Hermann-Ehlers-Str. → Reutlingen Hbf
+      <span>Direkt in Naldo · Stadtbus</span>
     </button>
 
   </div>
